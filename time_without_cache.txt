@@ -1,0 +1,76 @@
+./testbench +text_file=../../tests/sh.text.vh +data_file=../../tests/sh.data.vh
+PASS 5687
+./testbench +text_file=../../tests/sub.text.vh +data_file=../../tests/sub.data.vh
+PASS 5035
+./testbench +text_file=../../tests/lh.text.vh +data_file=../../tests/lh.data.vh
+PASS 2875
+./testbench +text_file=../../tests/srl.text.vh +data_file=../../tests/srl.data.vh
+PASS 5623
+./testbench +text_file=../../tests/srai.text.vh +data_file=../../tests/srai.data.vh
+PASS 2623
+./testbench +text_file=../../tests/jal.text.vh +data_file=../../tests/jal.data.vh
+PASS 211
+./testbench +text_file=../../tests/beq.text.vh +data_file=../../tests/beq.data.vh
+PASS 3043
+./testbench +text_file=../../tests/sra.text.vh +data_file=../../tests/sra.data.vh
+PASS 5695
+./testbench +text_file=../../tests/auipc.text.vh +data_file=../../tests/auipc.data.vh
+PASS 247
+./testbench +text_file=../../tests/lw.text.vh +data_file=../../tests/lw.data.vh
+PASS 2995
+./testbench +text_file=../../tests/bne.text.vh +data_file=../../tests/bne.data.vh
+PASS 3043
+./testbench +text_file=../../tests/lhu.text.vh +data_file=../../tests/lhu.data.vh
+PASS 2959
+./testbench +text_file=../../tests/lbu.text.vh +data_file=../../tests/lbu.data.vh
+PASS 2731
+./testbench +text_file=../../tests/simple.text.vh +data_file=../../tests/simple.data.vh
+PASS 43
+./testbench +text_file=../../tests/sb.text.vh +data_file=../../tests/sb.data.vh
+PASS 5051
+./testbench +text_file=../../tests/and.text.vh +data_file=../../tests/and.data.vh
+PASS 5371
+./testbench +text_file=../../tests/sltiu.text.vh +data_file=../../tests/sltiu.data.vh
+PASS 2395
+./testbench +text_file=../../tests/srli.text.vh +data_file=../../tests/srli.data.vh
+PASS 2551
+./testbench +text_file=../../tests/slli.text.vh +data_file=../../tests/slli.data.vh
+PASS 2443
+./testbench +text_file=../../tests/bge.text.vh +data_file=../../tests/bge.data.vh
+PASS 3259
+./testbench +text_file=../../tests/slti.text.vh +data_file=../../tests/slti.data.vh
+PASS 2395
+./testbench +text_file=../../tests/ori.text.vh +data_file=../../tests/ori.data.vh
+PASS 2011
+./testbench +text_file=../../tests/or.text.vh +data_file=../../tests/or.data.vh
+PASS 5407
+./testbench +text_file=../../tests/xor.text.vh +data_file=../../tests/xor.data.vh
+PASS 5395
+./testbench +text_file=../../tests/andi.text.vh +data_file=../../tests/andi.data.vh
+PASS 1927
+./testbench +text_file=../../tests/sltu.text.vh +data_file=../../tests/sltu.data.vh
+PASS 5059
+./testbench +text_file=../../tests/blt.text.vh +data_file=../../tests/blt.data.vh
+PASS 3043
+./testbench +text_file=../../tests/lb.text.vh +data_file=../../tests/lb.data.vh
+PASS 2731
+./testbench +text_file=../../tests/bgeu.text.vh +data_file=../../tests/bgeu.data.vh
+PASS 3559
+./testbench +text_file=../../tests/jalr.text.vh +data_file=../../tests/jalr.data.vh
+PASS 847
+./testbench +text_file=../../tests/sw.text.vh +data_file=../../tests/sw.data.vh
+PASS 5771
+./testbench +text_file=../../tests/lui.text.vh +data_file=../../tests/lui.data.vh
+PASS 331
+./testbench +text_file=../../tests/slt.text.vh +data_file=../../tests/slt.data.vh
+PASS 5059
+./testbench +text_file=../../tests/sll.text.vh +data_file=../../tests/sll.data.vh
+PASS 5467
+./testbench +text_file=../../tests/add.text.vh +data_file=../../tests/add.data.vh
+PASS 5131
+./testbench +text_file=../../tests/xori.text.vh +data_file=../../tests/xori.data.vh
+PASS 2035
+./testbench +text_file=../../tests/addi.text.vh +data_file=../../tests/addi.data.vh
+PASS 2455
+./testbench +text_file=../../tests/bltu.text.vh +data_file=../../tests/bltu.data.vh
+PASS 3343

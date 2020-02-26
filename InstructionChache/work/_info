@@ -1,0 +1,370 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/maciej
+vbenchmark
+Z0 !s110 1580781999
+!i10b 1
+!s100 Zm61Aie=02S8dlKlz8_1P2
+I9<@1ObfR=QA`PBU;eDV6J3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/home/maciej/Pulpit/FPGA/Projekt/InstructionChache
+Z3 w1580781726
+Z4 8/home/maciej/Pulpit/FPGA/Projekt/Mem_convertor/testbench.v
+Z5 F/home/maciej/Pulpit/FPGA/Projekt/Mem_convertor/testbench.v
+L0 154
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1580781999.000000
+Z8 !s107 /home/maciej/Pulpit/FPGA/Projekt/Mem_convertor/testbench.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/Mem_convertor/testbench.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vcore_sim
+R0
+!i10b 1
+!s100 Zh<g??3MNC]4Y]?Unh1Tb3
+I^AY2h<H;^QTFWkd[;mA`d3
+R1
+R2
+R3
+R4
+R5
+L0 67
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vget_data_from_lane
+R0
+!i10b 1
+!s100 hO4`U586g?_YJ2=>VfR;[2
+IhG`>WI]IPU`AmRYVACd5D2
+R1
+R2
+w1580766177
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_data_from_lane.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_data_from_lane.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_data_from_lane.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_data_from_lane.v|
+!i113 1
+R10
+R11
+vget_position_for_new_lane
+R0
+!i10b 1
+!s100 ;9JH9;J>nS91FL;aHUcLb1
+IC4APc;H`MPb6kczBeHBUl2
+R1
+R2
+w1580766206
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_position_for_new_lane.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_position_for_new_lane.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_position_for_new_lane.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_position_for_new_lane.v|
+!i113 1
+R10
+R11
+vget_tag_index
+R0
+!i10b 1
+!s100 LG@ll1ng=45[V^Dc:82XX0
+IZGLFn2L`PnEL0GI5g[W2K0
+R1
+R2
+w1580766176
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_tag_index.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_tag_index.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_tag_index.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/get_tag_index.v|
+!i113 1
+R10
+R11
+vinstruction_cache
+R0
+!i10b 1
+!s100 bR5Y;N_gi>nF1JBc07TjL3
+I>LA>egX>g4SRbYo_=R8;13
+R1
+R2
+w1580781990
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache.v
+L0 16
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache.v|
+!i113 1
+R10
+R11
+vinstruction_cache_block
+R0
+!i10b 1
+!s100 n22]VcT[K19Wf@Y3lMMTE3
+IMXhBHbMjheC<S71J>bz791
+R1
+R2
+w1580780760
+Z12 8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_block.v
+Z13 F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_block.v
+L0 5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_block.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_block.v|
+!i113 1
+R10
+R11
+vinstruction_cache_memory
+R0
+!i10b 1
+!s100 c3AOlNT_@XPJ:MC]AcRYn0
+Ib3Bka3FNS=UUF<ioeal]_1
+R1
+R2
+w1580770496
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_memory.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_memory.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_memory.v|
+!i113 1
+R10
+R11
+vMEM
+Z15 !s110 1580780410
+!i10b 1
+!s100 n4J?A`PfR9DgkXGSQ?0N[1
+InBoLRY4Q_4zKjU?D>C0_@0
+R1
+R2
+Z16 w1580780406
+R12
+R13
+L0 195
+R6
+r1
+!s85 0
+31
+Z17 !s108 1580780410.000000
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_block.v|
+R14
+!i113 1
+R10
+R11
+n@m@e@m
+vmem_convertor
+R0
+!i10b 1
+!s100 JNPzS<l^^iI98>GW96jCa1
+IoXe3D2K2R77GPzCEbO=4^2
+R1
+R2
+w1580769269
+8/home/maciej/Pulpit/FPGA/Projekt/Mem_convertor/mem_convertor.v
+F/home/maciej/Pulpit/FPGA/Projekt/Mem_convertor/mem_convertor.v
+L0 12
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/Mem_convertor/mem_convertor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/Mem_convertor/mem_convertor.v|
+!i113 1
+R10
+R11
+vmem_sim
+R0
+!i10b 1
+!s100 F[T:`d1:cAlCaSA>OTdMf3
+IOUi<TXA]4RSJAi`4EDJ:_2
+R1
+R2
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vMEM_T
+R15
+!i10b 1
+!s100 QH^PQ>[G1_zIKGb?9a7O62
+IdZDM]RO^lXNS1GTUHj9S23
+R1
+R2
+R16
+R12
+R13
+L0 170
+R6
+r1
+!s85 0
+31
+R17
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/instruction_cache_block.v|
+R14
+!i113 1
+R10
+R11
+n@m@e@m_@t
+vmemory_test
+R0
+!i10b 1
+!s100 TOz8;0YV1ZngNT[LFD7BU0
+I^oAjJ3m45=RNF02=fQ8P_1
+R1
+R2
+R3
+R4
+R5
+L0 99
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vupdate_data_lane
+R0
+!i10b 1
+!s100 7SMG4n=TTBLQ^Td^MIK1E1
+IS4fO4iS1H@Y8BTkVDh>]G0
+R1
+R2
+w1580766241
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_data_lane.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_data_lane.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_data_lane.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_data_lane.v|
+!i113 1
+R10
+R11
+vupdate_LRU
+R0
+!i10b 1
+!s100 o=d<QI=g]:k;>=o<<`f@:2
+IEVoaImjl8g2hC;zR=;4<e3
+R1
+R2
+Z18 w1580766242
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_LRU.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_LRU.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_LRU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_LRU.v|
+!i113 1
+R10
+R11
+nupdate_@l@r@u
+vupdate_position
+!s110 1580755348
+!i10b 1
+!s100 6UB14F4TMkH@`PPz4AXc>1
+IKoj=Vi<f2P6;FmYWmo:I`1
+R1
+R2
+w1580744099
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_position.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_position.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1580755348.000000
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_position.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_position.v|
+!i113 1
+R10
+R11
+vupdate_tag_lane
+R0
+!i10b 1
+!s100 V8MKJjNADjZMNCQTGOgaM3
+I9bYLja;[OOcU5>;I?FYdD0
+R1
+R2
+R18
+8/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_tag_lane.v
+F/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_tag_lane.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_tag_lane.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/maciej/Pulpit/FPGA/Projekt/InstructionChache/update_tag_lane.v|
+!i113 1
+R10
+R11

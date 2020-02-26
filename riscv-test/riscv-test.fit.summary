@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Feb  4 01:44:26 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : riscv-test
+Top-level Entity Name : riscv_test
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 8,769 / 32,070 ( 27 % )
+Total registers : 13953
+Total pins : 109 / 457 ( 24 % )
+Total virtual pins : 0
+Total block memory bits : 1,732,032 / 4,065,280 ( 43 % )
+Total RAM Blocks : 254 / 397 ( 64 % )
+Total DSP Blocks : 0 / 87 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 6 ( 17 % )
+Total DLLs : 0 / 4 ( 0 % )

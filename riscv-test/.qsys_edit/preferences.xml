@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="287" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="266" />
+   <export preferredWidth="279" />
+   <inputclock preferredWidth="183" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Library/Ospis,Library,Project" />
+ <window width="1920" height="1200" x="0" y="240" />
+</preferences>

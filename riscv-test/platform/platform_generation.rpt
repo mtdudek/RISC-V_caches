@@ -1,0 +1,147 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform.qsys --block-symbol-file --output-directory=/home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading riscv-test/platform.qsys
+Progress: Reading input file
+Progress: Adding Instruction_Cache_0 [Instruction_Cache 1.0]
+Progress: Parameterizing module Instruction_Cache_0
+Progress: Adding jtag_master [altera_jtag_avalon_master 19.1]
+Progress: Parameterizing module jtag_master
+Progress: Adding ledr [altera_avalon_pio 19.1]
+Progress: Parameterizing module ledr
+Progress: Adding riscv_data [altera_avalon_onchip_memory2 19.1]
+Progress: Parameterizing module riscv_data
+Progress: Adding riscv_sdram [altera_avalon_new_sdram_controller 19.1]
+Progress: Parameterizing module riscv_sdram
+Progress: Adding riscv_simple_sv_0 [riscv_simple_sv 1.0]
+Progress: Parameterizing module riscv_simple_sv_0
+Progress: Adding riscv_text [altera_avalon_onchip_memory2 19.1]
+Progress: Parameterizing module riscv_text
+Progress: Adding sw [altera_avalon_pio 19.1]
+Progress: Parameterizing module sw
+Progress: Adding sys_sdram_pll [altera_up_avalon_sys_sdram_pll 18.0]
+Progress: Parameterizing module sys_sdram_pll
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: platform.riscv_sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: platform.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: platform.sys_sdram_pll: Refclk Freq: 50.0
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform.qsys --synthesis=VERILOG --output-directory=/home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading riscv-test/platform.qsys
+Progress: Reading input file
+Progress: Adding Instruction_Cache_0 [Instruction_Cache 1.0]
+Progress: Parameterizing module Instruction_Cache_0
+Progress: Adding jtag_master [altera_jtag_avalon_master 19.1]
+Progress: Parameterizing module jtag_master
+Progress: Adding ledr [altera_avalon_pio 19.1]
+Progress: Parameterizing module ledr
+Progress: Adding riscv_data [altera_avalon_onchip_memory2 19.1]
+Progress: Parameterizing module riscv_data
+Progress: Adding riscv_sdram [altera_avalon_new_sdram_controller 19.1]
+Progress: Parameterizing module riscv_sdram
+Progress: Adding riscv_simple_sv_0 [riscv_simple_sv 1.0]
+Progress: Parameterizing module riscv_simple_sv_0
+Progress: Adding riscv_text [altera_avalon_onchip_memory2 19.1]
+Progress: Parameterizing module riscv_text
+Progress: Adding sw [altera_avalon_pio 19.1]
+Progress: Parameterizing module sw
+Progress: Adding sys_sdram_pll [altera_up_avalon_sys_sdram_pll 18.0]
+Progress: Parameterizing module sys_sdram_pll
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: platform.riscv_sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: platform.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: platform.sys_sdram_pll: Refclk Freq: 50.0
+Info: platform: Generating platform "platform" for QUARTUS_SYNTH
+Info: Instruction_Cache_0: "platform" instantiated Instruction_Cache "Instruction_Cache_0"
+Info: jtag_master: "platform" instantiated altera_jtag_avalon_master "jtag_master"
+Info: ledr: Starting RTL generation for module 'platform_ledr'
+Info: ledr:   Generation command is [exec /home/maciej/intelFPGA_lite/19.1/quartus/linux64/perl/bin/perl -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin/europa -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=platform_ledr --dir=/tmp/alt8295_1814477234742677529.dir/0003_ledr_gen/ --quartus_dir=/home/maciej/intelFPGA_lite/19.1/quartus --verilog --config=/tmp/alt8295_1814477234742677529.dir/0003_ledr_gen//platform_ledr_component_configuration.pl  --do_build_sim=0  ]
+Info: ledr: Done RTL generation for module 'platform_ledr'
+Info: ledr: "platform" instantiated altera_avalon_pio "ledr"
+Info: riscv_data: Starting RTL generation for module 'platform_riscv_data'
+Info: riscv_data:   Generation command is [exec /home/maciej/intelFPGA_lite/19.1/quartus/linux64/perl/bin/perl -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin/europa -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=platform_riscv_data --dir=/tmp/alt8295_1814477234742677529.dir/0004_riscv_data_gen/ --quartus_dir=/home/maciej/intelFPGA_lite/19.1/quartus --verilog --config=/tmp/alt8295_1814477234742677529.dir/0004_riscv_data_gen//platform_riscv_data_component_configuration.pl  --do_build_sim=0  ]
+Info: riscv_data: Done RTL generation for module 'platform_riscv_data'
+Info: riscv_data: "platform" instantiated altera_avalon_onchip_memory2 "riscv_data"
+Info: riscv_sdram: Starting RTL generation for module 'platform_riscv_sdram'
+Info: riscv_sdram:   Generation command is [exec /home/maciej/intelFPGA_lite/19.1/quartus/linux64/perl/bin/perl -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin/europa -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=platform_riscv_sdram --dir=/tmp/alt8295_1814477234742677529.dir/0005_riscv_sdram_gen/ --quartus_dir=/home/maciej/intelFPGA_lite/19.1/quartus --verilog --config=/tmp/alt8295_1814477234742677529.dir/0005_riscv_sdram_gen//platform_riscv_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: riscv_sdram: Done RTL generation for module 'platform_riscv_sdram'
+Info: riscv_sdram: "platform" instantiated altera_avalon_new_sdram_controller "riscv_sdram"
+Info: riscv_simple_sv_0: "platform" instantiated riscv_simple_sv "riscv_simple_sv_0"
+Info: riscv_text: Starting RTL generation for module 'platform_riscv_text'
+Info: riscv_text:   Generation command is [exec /home/maciej/intelFPGA_lite/19.1/quartus/linux64/perl/bin/perl -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin/europa -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=platform_riscv_text --dir=/tmp/alt8295_1814477234742677529.dir/0007_riscv_text_gen/ --quartus_dir=/home/maciej/intelFPGA_lite/19.1/quartus --verilog --config=/tmp/alt8295_1814477234742677529.dir/0007_riscv_text_gen//platform_riscv_text_component_configuration.pl  --do_build_sim=0  ]
+Info: riscv_text: Done RTL generation for module 'platform_riscv_text'
+Info: riscv_text: "platform" instantiated altera_avalon_onchip_memory2 "riscv_text"
+Info: sw: Starting RTL generation for module 'platform_sw'
+Info: sw:   Generation command is [exec /home/maciej/intelFPGA_lite/19.1/quartus/linux64/perl/bin/perl -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin/europa -I /home/maciej/intelFPGA_lite/19.1/quartus/sopc_builder/bin -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/maciej/intelFPGA_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=platform_sw --dir=/tmp/alt8295_1814477234742677529.dir/0008_sw_gen/ --quartus_dir=/home/maciej/intelFPGA_lite/19.1/quartus --verilog --config=/tmp/alt8295_1814477234742677529.dir/0008_sw_gen//platform_sw_component_configuration.pl  --do_build_sim=0  ]
+Info: sw: Done RTL generation for module 'platform_sw'
+Info: sw: "platform" instantiated altera_avalon_pio "sw"
+Info: sys_sdram_pll: "platform" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "platform" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "platform" instantiated altera_reset_controller "rst_controller"
+Info: jtag_phy_embedded_in_jtag_master: "jtag_master" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "jtag_master" instantiated timing_adapter "timing_adt"
+Info: fifo: "jtag_master" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "jtag_master" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "jtag_master" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "jtag_master" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "jtag_master" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "jtag_master" instantiated channel_adapter "p2b_adapter"
+Info: sys_pll: "sys_sdram_pll" instantiated altera_pll "sys_pll"
+Info: reset_from_locked: "sys_sdram_pll" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: riscv_simple_sv_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "riscv_simple_sv_0_data_master_translator"
+Info: riscv_sdram_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "riscv_sdram_s1_translator"
+Info: riscv_simple_sv_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "riscv_simple_sv_0_data_master_agent"
+Info: riscv_sdram_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "riscv_sdram_s1_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: riscv_simple_sv_0_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "riscv_simple_sv_0_data_master_limiter"
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: riscv_sdram_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "riscv_sdram_s1_burst_adapter"
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_004"
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_004"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: riscv_simple_sv_0_data_master_to_riscv_sdram_s1_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "riscv_simple_sv_0_data_master_to_riscv_sdram_s1_cmd_width_adapter"
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/maciej/Pulpit/FPGA/Projekt/riscv-test/platform/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: platform: Done "platform" with 52 modules, 100 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

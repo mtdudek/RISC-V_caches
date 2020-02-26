@@ -1,0 +1,13 @@
+# Loading project instruction_cache_sim
+# Compile of get_data_from_lane.v was successful.
+# Compile of get_position_for_new_lane.v was successful.
+# Compile of get_tag_index.v was successful.
+# Compile of instruction_cache.v was successful.
+# Compile of mem_convertor.v was successful.
+# Compile of testbench.v was successful.
+# Compile of update_data_lane.v was successful.
+# Compile of update_LRU.v was successful.
+# Compile of update_tag_lane.v was successful.
+# Compile of instruction_cache_memory.v was successful.
+# 10 compiles, 0 failed with no errors.
+# reading /home/maciej/intelFPGA_lite/19.1/modelsim_ase/linuxaloem/../modelsim.ini

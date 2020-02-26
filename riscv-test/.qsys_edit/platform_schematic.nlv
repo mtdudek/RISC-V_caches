@@ -1,0 +1,35 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst platform.jtag_master.fifo -pg 1
+preplace inst platform.jtag_master.transacto -pg 1
+preplace inst platform.sw -pg 1 -lvl 3 -y 630
+preplace inst platform.riscv_simple_sv_0 -pg 1 -lvl 2 -y 410
+preplace inst platform.jtag_master.p2b_adapter -pg 1
+preplace inst platform.ledr -pg 1 -lvl 3 -y 30
+preplace inst platform.sys_sdram_pll.sys_pll -pg 1
+preplace inst platform.jtag_master -pg 1 -lvl 2 -y 200
+preplace inst platform -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst platform.jtag_master.p2b -pg 1
+preplace inst platform.jtag_master.b2p -pg 1
+preplace inst platform.riscv_text -pg 1 -lvl 3 -y 540
+preplace inst platform.riscv_data -pg 1 -lvl 3 -y 140
+preplace inst platform.jtag_master.timing_adt -pg 1
+preplace inst platform.jtag_master.clk_rst -pg 1
+preplace inst platform.riscv_sdram -pg 1 -lvl 3 -y 240
+preplace inst platform.sys_sdram_pll -pg 1 -lvl 1 -y 370
+preplace inst platform.jtag_master.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst platform.Instruction_Cache_0 -pg 1 -lvl 3 -y 350
+preplace inst platform.jtag_master.b2p_adapter -pg 1
+preplace inst platform.sys_sdram_pll.reset_from_locked -pg 1
+preplace inst platform.jtag_master.clk_src -pg 1
+preplace netloc EXPORT<net_container>platform</net_container>(MASTER)platform.sdram_clk,(MASTER)sys_sdram_pll.sdram_clk) 1 1 3 NJ 310 NJ 230 NJ
+preplace netloc EXPORT<net_container>platform</net_container>(SLAVE)ledr.external_connection,(SLAVE)platform.ledr) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc INTERCONNECT<net_container>platform</net_container>(MASTER)jtag_master.master_reset,(MASTER)sys_sdram_pll.reset_source,(SLAVE)riscv_simple_sv_0.reset,(SLAVE)riscv_data.reset1,(SLAVE)jtag_master.clk_reset,(SLAVE)sw.reset,(SLAVE)ledr.reset,(SLAVE)riscv_text.reset1,(SLAVE)riscv_sdram.reset) 1 1 2 380 290 630
+preplace netloc EXPORT<net_container>platform</net_container>(SLAVE)platform.sdram_wire,(SLAVE)riscv_sdram.wire) 1 0 3 NJ 330 NJ 330 NJ
+preplace netloc EXPORT<net_container>platform</net_container>(SLAVE)platform.clk,(SLAVE)sys_sdram_pll.ref_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>platform</net_container>(SLAVE)platform.sw,(SLAVE)sw.external_connection) 1 0 3 NJ 660 NJ 660 NJ
+preplace netloc FAN_OUT<net_container>platform</net_container>(MASTER)sys_sdram_pll.sys_clk,(SLAVE)riscv_data.clk1,(SLAVE)riscv_simple_sv_0.clock,(SLAVE)sw.clk,(SLAVE)riscv_text.clk1,(SLAVE)riscv_sdram.clk,(SLAVE)jtag_master.clk,(SLAVE)ledr.clk) 1 1 2 360 400 670
+preplace netloc FAN_OUT<net_container>platform</net_container>(SLAVE)riscv_sdram.s1,(SLAVE)riscv_text.s1,(SLAVE)riscv_data.s1,(SLAVE)sw.s1,(SLAVE)ledr.s1,(MASTER)jtag_master.master) 1 2 1 690
+preplace netloc EXPORT<net_container>platform</net_container>(SLAVE)platform.reset,(SLAVE)sys_sdram_pll.ref_reset) 1 0 1 NJ
+levelinfo -pg 1 0 90 1030
+levelinfo -hier platform 100 180 460 770 930

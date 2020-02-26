@@ -1,0 +1,97 @@
+// new_component.v
+
+// This file was auto-generated as a prototype implementation of a module
+// created in component editor.  It ties off all outputs to ground and
+// ignores all inputs.  It needs to be edited to make it do something
+// useful.
+// 
+// This file will not be automatically regenerated.  You should check it in
+// to your version control system if you want to keep it.
+
+`timescale 1 ps / 1 ps
+module new_component #(
+		parameter number_of_sets  = 4,
+		parameter bits_for_index  = 6,
+		parameter bits_for_offset = 6
+	) (
+		input  wire        clock,                    //            clock_sink.clk
+		input  wire        reset,                    //            reset_sink.reset
+		
+		output wire [31:0] line_address,             // access_to_main_memory.address
+		output wire        read_cache,               //                      .read
+		input  wire [63:0] readdata,                 //                      .readdata
+		input  wire        waitrequest_cache,        //                      .waitrequest
+		output wire [3:0]  burstcount,               //                      .burstcount
+		input  wire        readdatavalid,            //                      .readdatavalid
+		
+		input  wire [31:0] instruction_address,      //       core_interaface.address
+		output wire [31:0] instruction,              //                      .readdata
+		output wire        waitrequest_core,			//                      .waitrequest
+		input  wire        read_core       				//                      .read
+	);
+	
+	parameter bits_for_tag=32-bits_for_index-bits_for_offset;
+	parameter single_line_size =8*(1<<bits_for_offset); 
+	parameter cache_line_size = single_line_size * number_of_sets;
+	parameter tags_line_size = number_of_sets*(bits_for_tag);
+	
+	reg [number_of_sets-1:0] valid_lines [1<<bits_for_index] ;
+	reg [tags_line_size-1:0] MEM_T [1<<bits_for_index];
+	reg [cache_line_size-1:0] MEM [1<<bits_for_index];
+	
+	wire [bits_for_offset-1:0] offset;
+	wire [bits_for_index-1:0] index;
+	wire [bits_for_tag-1:0] tag;
+	
+	wire miss;
+	
+	reg [bits_for_index-1:0] active_index;
+	reg [cache_line_size-1:0] active_line;
+	reg [tags_line_size-1:0] active_line_tags; 
+	
+	assign {tag,index,offset} = instruction_address;
+	
+	//control path
+	
+	integer i;
+	
+	always @(posedge reset or posedge clock) begin
+		if (reset) begin
+			for (i=0;i<(1<<bits_for_index);i=i+1) begin
+				valid_lines[i] <= {number_of_sets*{1'b0}};
+			end
+		end
+		else if (active_index != index)begin
+			active_index <= index;
+		end
+	end
+	
+	assign miss = |(active_index^index);
+
+	latch miss_occure(waitrequest,miss,reset_waitrequest);
+	
+	//data path
+	
+	always @(posedge clock) begin
+		if(active_index!=index) begin
+			MEM[active_index]<=active_line;
+			active_line <= MEM [index];
+		end
+	end
+	
+	assign line_address = 32'b00000000000000000000000000000000;
+
+	assign read = 1'b0;
+
+	assign burstcount = 4'b0000;
+
+	assign instruction = 32'b00000000000000000000000000000000;
+
+endmodule
+
+module latch(output reg signal, input set, input reset, input clk);
+	always @(posedge set or posedge clk) begin
+		if(set) signal<= 1'b1;
+		else if(reset) signal <= 1'b0;
+	end
+endmodule
